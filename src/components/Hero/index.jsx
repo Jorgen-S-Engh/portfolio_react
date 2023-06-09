@@ -9,8 +9,6 @@ function Hero() {
         <p>I am finishing a two year higher professional degree in frontend-development in the spring of 2023. I have a masterdegree in political science, and I have experience working as a project manager and an IT-manager prior to my development-studies. Feel free to check out my portfolio, and contact me regarding anything.</p>
       </div>
       <div className={styles.image}><img src="/assets/profile.png" alt="profile picture of me" /></div>
-
-
     </div>
   )
 }
