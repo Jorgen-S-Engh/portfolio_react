@@ -2,7 +2,7 @@ import React from 'react'
 import styles from "./Card.module.scss";
 import { useState, useEffect } from 'react';
 import projects from "../../projects.json";
-import github from "../../assets/github";
+import github from "../../../public/assets/github.png";
 
 function Card() {
   // const [data, setData] = useState([])
