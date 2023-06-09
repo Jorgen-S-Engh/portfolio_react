@@ -63,7 +63,7 @@ function Card() {
             {project.github &&
               <div className={styles.github_container}>
               <a href={project.github} className={styles.github_container} target="_blank">
-                <img className={styles.github_logo} src="public/assets/github.png" alt="GitHub Link" /></a>
+                <img className={styles.github_logo} src="/assets/github.png" alt="GitHub Link" /></a>
               </div>
             }
           </div>
