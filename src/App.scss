@@ -1,10 +1,27 @@
 @import "@fontsource/roboto";
 
 
+@font-face {
+  font-family: 'Avenir';
+  src: url("/fonts/Avenir Next LT Pro Regular.otf") format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mandalore';
+  src: url("public/fonts/MandaloreExpanded-1GGd4.otf") format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
 *{
+  font-family: "Avenir", "arial";
   margin: 0px;
   padding: 0px;
-  font-family: "Roboto";  
 }
 
 

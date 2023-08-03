@@ -4,6 +4,9 @@ import Hero from './components/Hero'
 import ProjectCard from './components/projectCard';
 import { Box, Container } from '@mui/system';
 import Grid from '@mui/material/Unstable_Grid2';
+import NewCard from "./components/NewCard";
+
+
 
 
 
@@ -14,11 +17,11 @@ function App() {
   return (
     <>
     <Hero/>
-    <Card/>
-    <Grid container>
-      <ProjectCard/>
-
+    <Grid container sx={{display: "flex", justifyContent: "center"}}>
+      <NewCard/>
     </Grid>
+
+
 
 
       
