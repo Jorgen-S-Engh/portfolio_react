@@ -21,7 +21,7 @@ export default function NewCard() {
              <Typography sx={{fontWeight: 900, fontSize: "1.2rem"}}>{project.title}</Typography>
             </Box>
 
-            <Card sx={{maxWidth:"300px", bgcolor: "primary.dark"}} className="card">
+            <Card sx={{maxWidth:"300px", bgcolor: "#11243e"}} className="card">
               <CardActionArea>
                 <CardMedia
                   component="img"
@@ -43,6 +43,7 @@ export default function NewCard() {
                 <GitHubIcon sx={{
                   marginTop: "15px",
                   fontSize: "2rem",
+                  color: "#de1738",
                   transition: "0.3s",
                   "&:hover": {
                     transform: "scale(1.2)"
