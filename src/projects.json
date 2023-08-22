@@ -5,7 +5,8 @@
       "description": "This is my final project exam. The assigment was to create a site for the fictitious accommodation booking site called Holidaze.",
       "image": "/assets/Holidaze.jpg",
       "link": "https://lovely-starburst-3ddc3e.netlify.app/",
-      "github": "https://github.com/Jorgen-S-Engh/Project_exam_2_J-rgen_Engh"
+      "github": "https://github.com/Jorgen-S-Engh/Project_exam_2_J-rgen_Engh",
+      "tech": ["React", "Sass"]
   },
   {
     "number": 2, 
@@ -13,7 +14,8 @@
     "description": "Course assignement for the course frontend-frameworks",
     "image": "/assets/FFW_CA.jpg",
     "link": "https://grand-sundae-549d05.netlify.app/",
-    "github": "https://github.com/Jorgen-S-Engh/Project_exam_2_J-rgen_Engh"
+    "github": "https://github.com/Jorgen-S-Engh/Project_exam_2_J-rgen_Engh",
+    "tech": ["React", "Sass"]
 },
   {
     "number": 3, 
@@ -21,7 +23,8 @@
     "description": "Semester project for the third semester. The assignment was to create an webpage for the fictitious The Auction House.",
     "image": "/assets/Auction_house.jpg",
     "link": "https://jorgen-s-engh.github.io/Semester-Project-2/index.html",
-    "github": "https://github.com/Jorgen-S-Engh/Semester-Project-2"
+    "github": "https://github.com/Jorgen-S-Engh/Semester-Project-2",
+    "tech": ["HTML5", "Bootstrap", "JS"]
 },
   {
     "number": 4, 
@@ -29,7 +32,8 @@
     "description": "Project exam for the first semester. The assignment was to create a new webpage for the company Ameta. ",
     "image": "/assets/ameta_img2.jpg",
     "link": "https://genuine-florentine-f2bdd8.netlify.app/",
-    "github": "https://github.com/Jorgen-S-Engh/project-exam-1-Jorgen-S-Engh/"
+    "github": "https://github.com/Jorgen-S-Engh/project-exam-1-Jorgen-S-Engh/",
+    "tech": ["HTML5", "CSS3", "JS"]
 },
 {
   "number": 5, 
@@ -37,6 +41,7 @@
   "description": "My own online store which provides hight quality shaving equipment to the Norwegian market",
   "image": "/assets/shaver.jpg",
   "link": "https://shaver.no",
-  "github": null
+  "github": null,
+  "tech": null
 }
 ]

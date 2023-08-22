@@ -7,7 +7,20 @@ import { CardActionArea, Button, Box } from '@mui/material';
 import projects from "../../projects.json";
 import Grid from '@mui/material/Unstable_Grid2';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import "./card.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHtml5, faCss3, faSquareJs, faReact, faPython, faWordpress, faBootstrap, faSass } from '@fortawesome/free-brands-svg-icons';
+
+
+const techToIcon = {
+  "HTML5": faHtml5,
+  "CSS3": faCss3,
+  "JS": faSquareJs,
+  "React": faReact,
+  "Python": faPython,
+  "Wordpress": faWordpress,
+  "Bootstrap": faBootstrap,
+  "Sass": faSass
+};
 
 
 export default function NewCard() {
@@ -21,7 +34,7 @@ export default function NewCard() {
              <Typography sx={{fontWeight: 900, fontSize: "1.2rem"}}>{project.title}</Typography>
             </Box>
 
-            <Card sx={{maxWidth:"300px", bgcolor: "#11243e"}} className="card">
+            <Card sx={{maxWidth:"300px", bgcolor: "#11243e", height: "530px"}} className="card" >
               <CardActionArea>
                 <CardMedia
                   component="img"
@@ -40,15 +53,27 @@ export default function NewCard() {
               </CardActionArea>
               <Box sx={{display: "flex", alignItems: "center", flexDirection: "column", marginBottom: "10px"}}>
                 <Button variant="contained">See demo</Button>
-                <GitHubIcon sx={{
-                  marginTop: "15px",
-                  fontSize: "2rem",
-                  color: "#de1738",
-                  transition: "0.3s",
-                  "&:hover": {
-                    transform: "scale(1.2)"
-                  }
-                  }} color="action" />
+                <a href={project.github} target="_blank">
+                  <GitHubIcon sx={{
+                    marginTop: "15px",
+                    fontSize: "2rem",
+                    color: "#de1738",
+                    transition: "0.3s",
+                    "&:hover": {
+                      transform: "scale(1.2)",
+                      color: "white"
+                    }
+                    }}/>
+                </a>
+
+                  <Typography variant="p" sx={{color: "white", fontWeight: "bold", margin: "5px", marginBottom: "10px" }}>Built with:</Typography>
+                  <Grid container spacing={3}>
+                    {project.tech && project.tech.map((tech, index) => (
+                      <Grid key={index}>
+                        <FontAwesomeIcon icon={techToIcon[tech]} style={{ color: "#de1738", fontSize: "2rem" }} />
+                      </Grid>
+                    ))}
+                  </Grid>
               </Box>
             </Card>
           </Grid>
